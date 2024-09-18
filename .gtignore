@@ -1,5 +1,6 @@
 # ignore ALL .log files
 *.css
+style.css
 
 # ignore ALL files in ANY directory named temp
 learn-git/
