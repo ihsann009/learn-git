@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dicoding Submission</title>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
 </head>
 <body>
-    <p>tess kawan</p>
+    
+    <header>
+        <img class="logo "src="logo.png" alt="">
+        <nav>
+            <ul class="navlink">
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">About</a></li>
+                <li onclick="toggleSidebar()" class="menubox"><a href="#"><img src="assets/menu.png" alt=""></a></li>
+            </ul>
+        </nav>
+        
+
+        <div class="sidebar">
+            <button class="close-btn" onclick="toggleSidebar()">X</button> 
+            <nav>
+                <ul class="navlinkside">
+                    <img class="logoside "src="logo.png" alt="">
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">About</a></li>
+                    
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+        <section class="profile">
+            <h1>Hi There!</h1>
+            <h1>I'm Muhammad Ihsan</h1>
+            <article class="desc">
+                <p>
+                    I am a Web3 enthusiast passionate about decentralized technologies, blockchain, and the future of the internet.
+                     While still learning and growing my skills, I’m particularly interested in smart contracts, DeFi, and NFTs, and actively exploring how these innovations 
+                    can shape more transparent, decentralized digital ecosystems.I'm dedicated to deepening my knowledge and contributing to the Web3 community as I continue to learn and evolve in this rapidly changing space. </p>
+            </article>
+
+            <div class="social">
+                <img src="social/github.png" alt="">
+                <img src="social/insta.png" alt="">
+                <img src="social/linkedin.png" alt="">
+                <img src="social/twitter.png" alt="">
+            </div>
+            <div>
+                <a class="contact" href="https://www.linkedin.com/in/muhammad-ihsan-308250260/"><button>Connect with me!</button></a>
+            </div>
+        </section>
+        
+
+
+        <aside>
+            <img class="profilephoto" src="foto1.png" alt="">
+            <p>ini gambar</p>
+        </aside>
+    </div>
+    </main>
+    <script>
+        function toggleSidebar() {
+    const sidebars = document.querySelector('.sidebar');
+    sidebars.classList.toggle('active'); // Toggle class 'active' on sidebar
+}
+
+    function toggleSidebar() {
+        const sidebars = document.querySelector('.sidebar');
+        sidebars.classList.toggle('active');
+    }
+    </script>
 </body>
 </html>
